@@ -126,3 +126,63 @@ i{
     /* color: black; */
 }
 
+.btn:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+
+.btn span,
+.btn i{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#home, .projetos, .sobre, .contato{
+    padding: 40px 16px;
+}
+
+/* Responsivo */
+
+@media (min-width: 768px){ /* Comprimento até 768 */
+
+    #header{
+        position: fixed;
+        border-bottom: 1px solid rgb(194, 188, 188);
+        padding: 16px 96px;
+        background: rgb(235, 229, 229);
+    }
+    .nav-mobile{
+        display: none;
+    }
+    .header-nav{
+        display: flex;
+    }
+    .header-nav, .trocar-tema{
+        min-width: 30%;
+    }
+
+
+
+}
