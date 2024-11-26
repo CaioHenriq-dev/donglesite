@@ -1,8 +1,12 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Reset do navegador */
 *{
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -22,6 +26,18 @@ a:hover{
 i{
     color: rgb(132, 132, 132);
 }
+
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: black;
+}
+b{
+    font-weight: 300;
+    font-weight: bold;
+}
+
 
 /* Responsivo */
 #header{
@@ -173,16 +189,53 @@ i{
         padding: 16px 96px;
         background: rgb(235, 229, 229);
     }
+
     .nav-mobile{
         display: none;
     }
+
     .header-nav{
         display: flex;
     }
+
     .header-nav, .trocar-tema{
         min-width: 30%;
     }
 
+    #home, .projetos, .sobre{
+        padding: 90px 96px 64px 96px;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1{
+        font-size: 100px;
+    }
+
+} /* fim 768px */
+
+@media (min-width: 992px){
+
+} /* Fim 992 */
+
+@media (min-width: 1200px){
+    #home{
+        padding: 60px 96px 32px
+    }
+    .main-content .btn{
+        width: auto;
+    }
+} /* fim 1200 */
+
+@media (min-width: 1400px){
+    .header{
+        padding: 200px 240px 32px;
+    }
 
 
-}
+
+} /* fim 1400 */
