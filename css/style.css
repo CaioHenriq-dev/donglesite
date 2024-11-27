@@ -1,6 +1,51 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* tema dark */
+:root,
+:root[ data-theme='light']{
+
+    --cor-fundo: rgba(218, 212, 212, 0.74);
+    --cor-texto-padrao: black;
+
+    --cor-borda: rgb(194, 188, 188);
+
+    --cor-titulo: ;
+
+    --cor-subtitulo: ;
+
+    --cor-texto: ;
+
+    --cor-menu: rgb(235, 229, 229);
+
+    --cor-link: ; 
+
+
+
+}
+
+:root[data-theme='dark']{
+
+    --cor-fundo: rgb(24, 23, 23);
+    --cor-texto-padrao: white;
+
+    --cor-borda: rgb(231, 227, 227);
+
+    --cor-titulo: ;
+
+    --cor-subtitulo: ;
+
+    --cor-texto: ;
+
+    --cor-menu: rgb(24, 23, 23);;
+
+    --cor-link: ; 
+
+
+
+
+}
+
 /* Reset do navegador */
 *{
     margin: 0;
@@ -10,7 +55,9 @@
 }
 
 body{
-    background: rgba(218, 212, 212, 0.74);
+    background: var(--cor-fundo);
+    color: var(--cor-texto-padrao);
+
 }
 
 a{
@@ -29,13 +76,23 @@ i{
 
 h1{
     font-size: 40px;
-    font-weight: 500;
-    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-family: "Inter", serif;
     color: black;
 }
+
 b{
-    font-weight: 300;
-    font-weight: bold;
+    font-weight: 600;
+   
+}
+
+p, span, li{
+    font-size: 16px;
+}
+
+p{
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -65,7 +122,7 @@ b{
 .menu{
     display: flex;
     align-items: center;
-    background: rgb(235, 229, 229);
+    background: transparent;
     gap: 15px;
 }
 
@@ -84,7 +141,7 @@ b{
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    border-top: 1px solid rgb(194, 188, 188);
+    border-top: 1px solid var(--cor-borda);
 }
 
 .menu-mobile .menu-link{
@@ -187,7 +244,7 @@ b{
         position: fixed;
         border-bottom: 1px solid rgb(194, 188, 188);
         padding: 16px 96px;
-        background: rgb(235, 229, 229);
+        background: var(--cor-fundo);
     }
 
     .nav-mobile{
@@ -235,6 +292,11 @@ b{
     .header{
         padding: 200px 240px 32px;
     }
+
+    p, span, li{
+        font-size: 20px;
+    }
+    
 
 
 
