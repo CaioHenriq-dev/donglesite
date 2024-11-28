@@ -6,19 +6,22 @@
 :root[ data-theme='light']{
 
     --cor-fundo: rgba(218, 212, 212, 0.74);
+    
     --cor-texto-padrao: black;
 
     --cor-borda: rgb(194, 188, 188);
 
-    --cor-titulo: ;
+    --cor-titulo: 
 
     --cor-subtitulo: ;
 
-    --cor-texto: ;
+    --cor-texto: black;;
 
     --cor-menu: rgb(235, 229, 229);
 
     --cor-link: ; 
+
+    --cor-btn: black;
 
 
 
@@ -31,15 +34,17 @@
 
     --cor-borda: rgb(231, 227, 227);
 
-    --cor-titulo: ;
+    --cor-titulo: 
 
     --cor-subtitulo: ;
 
-    --cor-texto: ;
+    --cor-texto: white;
 
-    --cor-menu: rgb(24, 23, 23);;
+    --cor-menu: rgba(24, 23, 23, 0);
 
     --cor-link: ; 
+
+    --cor-btn: rgb(255, 255, 255);
 
 
 
@@ -78,7 +83,7 @@ h1{
     font-size: 40px;
     font-weight: 300;
     font-family: "Inter", serif;
-    color: black;
+    
 }
 
 b{
@@ -211,8 +216,10 @@ p{
 }
 
 .btn-primary{
-    border: 1px solid black;
+    border: 1px solid var(--cor-btn);
     border-radius: 15px;
+    color: var(--cor-btn);
+    
 }
 
 #home{
@@ -225,6 +232,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    
 }
 
 .video iframe{
@@ -234,6 +242,35 @@ p{
 
 #home, .projetos, .sobre, .contato{
     padding: 40px 16px;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.projetos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.projeto-card{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.img-card{
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-button span{
+    color: var(--cor-btn);
 }
 
 /* Responsivo */
