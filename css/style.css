@@ -27,14 +27,14 @@
 
     --cor-texto: #dfe0e6;
 
-    --cor-hover: #d4701d;
+    --cor-hover: #e08025;
     --cor--menu: #7b7b7b;
 
     --cor-link: #dfe0e6;
     --cor-icone: #dfe0e6;
-    --icone-hover: #7b7b7b;
+    --icone-hover: #e08025;
 
-    --trocar-tema: #ffa600;
+    --trocar-tema: #e08025;
 
     --cor-btn: #dfe0e6;
 
@@ -53,15 +53,15 @@
     --cor-subtitulo: #111217;
     --cor-texto: #111217;
 
-    --cor-hover: #d4701d;
-    ;
+    --cor-hover: #e08025;
+    
     --cor--menu: #7b7b7b;
 
     --cor-link: #dfe0e6;
     --cor-icone: #111217;
-    --icone-hover: #7b7b7b;
+    --icone-hover: #e08025;
 
-    --trocar-tema: #297edf;
+    --trocar-tema: #e08025;
 
     --cor-btn: #111217;
 
@@ -69,6 +69,11 @@
 
 }
 
+/* Logo para inverter a cor de algo
+    html[data-theme='light'] .logo{
+        filter: invert(01);
+    }
+ */
 
 /* Reset do navegador */
 * {
@@ -107,7 +112,9 @@ h1 {
     color: var(--cor-titulo);
     font-family: var(--font-h2);
     text-transform: uppercase;
+    margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 b {
@@ -128,6 +135,7 @@ p {
 /* 
 ID = # 
 Class = ( . ) ponto */
+
 /* estrutura do menu */
 #header {
     display: flex;
@@ -135,8 +143,13 @@ Class = ( . ) ponto */
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5px 1px;
+    padding: 16px 16px;
     z-index: 2;
+}
+
+.header-logo .logo {
+    width: 110px;
+    height: 40px;
 }
 
 .trocar-tema {
