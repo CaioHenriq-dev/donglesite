@@ -23,7 +23,7 @@
     --cor-borda: #dfe0e6;
 
     --cor-titulo: #dfe0e6;
-    --cor-subtitulo: #48a7f5;
+    --cor-subtitulo: #e6e6e6;
 
     --cor-texto: #dfe0e6;
 
@@ -38,7 +38,7 @@
 
     --cor-btn: #dfe0e6;
 
-    --cor-seta: #48a7f5;
+    --cor-seta: #dbdbdb;
 }
 
 /* tema Light */
@@ -427,7 +427,7 @@ h2 {
 
 .sobre-icones i { 
     font-size: 18px;
-    color: var(--cor-seta);
+    color: var(--cor-hover);
 }
 
 .sobre-content2 .col1, 
@@ -513,6 +513,25 @@ h3 {
     padding-right: 16px;
 }
 
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 16px;
+    border-top: 1px solid var(--cor-borda);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.contato p{
+    text-align: center;
+}
+
+.contato button{
+    margin-bottom: 50px ;
+}
+
 
 /*  Responsivo  */
 
@@ -581,6 +600,14 @@ h3 {
     h2 {
         font-size: 40px;
         margin-bottom: 30px;
+    }
+
+    .contato{
+        padding: 90px;
+    }
+
+    .contato p{
+        width: 80%;
     }
 }
 
