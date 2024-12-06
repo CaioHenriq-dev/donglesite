@@ -54,7 +54,7 @@
     --cor-texto: #111217;
 
     --cor-hover: #e08025;
-    
+
     --cor--menu: #7b7b7b;
 
     --cor-link: #dfe0e6;
@@ -368,7 +368,7 @@ h2 {
 .card-button .btn {
     padding: 8px 20px;
     margin-top: 15px;
-    
+
 }
 
 .card-button .btn span {
@@ -409,7 +409,7 @@ h2 {
     object-position: center;
     pointer-events: none;
     border-radius: 50%;
-    border: 8px solid var(--cor-hover);
+    border: 3px solid var(--cor-hover);
 }
 
 .sobre-descricao {
@@ -425,12 +425,12 @@ h2 {
     gap: 18px;
 }
 
-.sobre-icones i { 
+.sobre-icones i {
     font-size: 18px;
     color: var(--cor-hover);
 }
 
-.sobre-content2 .col1, 
+.sobre-content2 .col1,
 .sobre-content2 .col2 {
     display: flex;
     flex-direction: column;
@@ -438,7 +438,7 @@ h2 {
     gap: 32px;
 }
 
-.sobre-content2 .col1 .row1, 
+.sobre-content2 .col1 .row1,
 .sobre-content2 .col1 .row2 {
     display: flex;
     flex-direction: column;
@@ -479,7 +479,7 @@ h3 {
     align-items: flex-start;
     gap: 20px;
     border: 1px solid var(--cor-btn);
-}   
+}
 
 .accordion-body p {
     font-family: var(--texto);
@@ -488,32 +488,32 @@ h3 {
     margin-bottom: 5px;
 }
 
-.accordion-header .bi-caret-down-fill{
+.accordion-header .bi-caret-down-fill {
     color: var(--cor-borda);
 }
 
-.accordion-item.active .accordion-body{
+.accordion-item.active .accordion-body {
     display: flex;
 }
 
-.accordion-item.active .bi-caret-down-fill{
+.accordion-item.active .bi-caret-down-fill {
     transform: rotate(180deg);
     transition: ease .5s;
     color: var(--cor-borda);
 }
 
-.accordion-item.active .accordion-header{
+.accordion-item.active .accordion-header {
     background: var(--cor-fundo);
 }
 
-.accordion-item{
+.accordion-item {
     width: 650px;
     display: flex;
     flex-direction: column;
     padding-right: 16px;
 }
 
-.contato{
+.contato {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -524,22 +524,105 @@ h3 {
     border-bottom: 1px solid var(--cor-borda);
 }
 
-.contato p{
+.contato p {
     text-align: center;
 }
 
-.contato button{
-    margin-bottom: 10px ;
+.contato button {
+    margin-bottom: 10px;
 }
 
-footer{
+footer {
     margin-bottom: 80px;
     padding: 20px;
 }
 
-footer p{
+footer p {
     font-size: 13px;
     text-align: center;
+}
+
+/* Form CSS */
+
+.form-contato {
+    background: #dfe0e6;
+    padding: 20px;
+    border-radius: 8px;
+
+    width: 90%;
+    max-width: 800px;
+
+    box-shadow: 0 4px 8px var(--cor--menu);
+    /*     border: 3px solid var(--cor-texto); */
+}
+
+.form-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-label {
+    color: #111217;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #e08025;
+    outline: none;
+    border-radius: none;
+}
+
+.form-input-file {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.form-textarea {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form-button {
+    /* display: ; */
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-form{
+    display: flex;
+    justify-content: center;
+}
+
+.form-group .form-button {
+    text-align: center;
+}
+
+.form-button:hover{
+    background: var(--cor-hover);
+    transition: ease-in-out .3s;
 }
 
 /*  Responsivo  */
@@ -547,7 +630,7 @@ footer p{
 
 @media (min-width: 576px) {
 
-    
+
 
     h1 {
         font-size: 48px;
@@ -567,7 +650,7 @@ footer p{
 @media (min-width: 768px) {
     /* apartir de  */
 
-    
+
 
     #header {
         position: fixed;
@@ -611,17 +694,19 @@ footer p{
         margin-bottom: 30px;
     }
 
-    .contato{
+    .contato {
         padding: 90px;
     }
 
-    .contato p{
+    .contato p {
         width: 80%;
     }
 
-    footer{
+    footer {
         margin: 0;
-    };
+    }
+
+    ;
 }
 
 /* fim 768px */
@@ -635,7 +720,7 @@ footer p{
         font-size: 60px;
     }
 
-    .accordion-item{
+    .accordion-item {
         width: 90vw;
         /* display: flex;
         flex-direction: column;
