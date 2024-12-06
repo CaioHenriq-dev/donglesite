@@ -456,8 +456,8 @@ h3 {
 }
 
 .accordion-header {
-    width: 100%;
     display: flex;
+    width: 100%;
     padding: 8px 16px;
     justify-content: space-between;
     align-items: center;
@@ -529,9 +529,18 @@ h3 {
 }
 
 .contato button{
-    margin-bottom: 50px ;
+    margin-bottom: 10px ;
 }
 
+footer{
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    text-align: center;
+}
 
 /*  Responsivo  */
 
@@ -609,6 +618,10 @@ h3 {
     .contato p{
         width: 80%;
     }
+
+    footer{
+        margin: 0;
+    };
 }
 
 /* fim 768px */
